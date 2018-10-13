@@ -1,0 +1,223 @@
+@font-face {
+    font-family: gochi_hand;
+    src: url("fonts/gochi_hand/GochiHand-Regular.ttf");
+}
+
+@font-face {
+    font-family: pressstart;
+    src: url("fonts/Press_Start_2P/PressStart2P-Regular.ttf");
+}
+
+body{
+	min-height: 100%;
+	margin: 0px;
+	padding: 0px;
+
+	background-image:  url("../img/naruto.png"), url("../img/background.jpg") ;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size:  45%, cover;
+	background-position: center;
+}
+
+.linha{
+	margin: 0px auto 0;
+	width: 80%;
+	text-align: center;
+}
+
+.principal{
+	min-height: 75vh;
+	margin-top: 120px;
+}
+
+
+
+.top-fixed{
+	position: fixed;
+	left:0px;
+	right:0px;
+	top: 0px;
+	z-index: 9999;
+}
+
+body header, body footer{
+	min-height: 60px;
+}
+
+
+.menu-principal a {
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	transition: all 0.2s;
+	font-family: gochi_hand;
+	color: #f98e0d;
+	font-size: x-large;
+	text-shadow: -2px 1px rgba(0,0,0,0.8);
+}
+
+.menu-principal ul {
+	list-style: none;
+	text-align: right;
+	padding: 0px 20px 0px;
+}
+
+.menu-principal ul li{
+	display: inline-block;
+	min-width: 150px;
+}
+
+.menu-principal ul li a{
+	background-color: rgba(0, 0, 0, 0.2);
+	border-radius: 50px;
+
+}
+
+.menu-principal ul li a:active{
+	background-color: black;
+	color:white;
+}
+
+.menu-principal ul li a:hover{
+	background-color: orange;
+	color: black;
+}
+
+.logo {
+  display: inline-block;
+  width: 20%;
+  float: left;
+  margin-bottom: 0px;
+}
+
+.menu-principal {
+  width: 80%;
+  float: right;
+  line-height: 56px;
+
+}
+
+.logo img{
+	height: 56px;
+	margin-left: 0px;
+	
+}
+
+#inicio {
+
+    padding: 20px;
+
+    overflow: hidden;
+    height: 329px;
+}
+
+#personagens{
+	height: 350px;
+	background-image: url('../img/personagens.jpg');
+	background-size: contain;
+}
+
+
+.left, .right{
+	display: inline-block;
+}
+
+.trailer{
+	margin-top: 10px;
+}
+
+.trailer, .sinopse {
+    height: 300px;
+    width: 50%;
+    margin-left: auto !important;
+}
+
+#sinopse{
+	overflow: hidden;
+	background-color: black;
+	text-align: center;
+}
+
+.sinopse{
+	background-color: orange;
+	padding: 10px;
+	width: 45%;
+	float: right;
+	text-align: justify;
+	color: aliceblue;
+}
+
+.sinopse h1 {
+    font-family: pressstart;
+    color: white;
+    text-shadow: 2px 2px coral;
+    text-align: left;
+    font-size: x-large;
+    margin-bottom: 30px !important;
+    margin-top: 16px !important;
+}
+
+.sinopse h1, .sinopse p{
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+#inicio img {
+    transform: scale(0.6);
+    margin-top: -27%;
+    transition: all 0.3s;
+    cursor: hand;
+}
+
+body footer {
+    background-color: slategrey;
+}
+
+footer span {
+    line-height: 50px;
+    color: ghostwhite;
+}
+
+@media screen and (max-width: 970px){
+	.menu-principal{
+		width: 100%;
+	}
+	.logo {
+		width: 100%;
+	}
+	.principal{	
+		margin-top: 220px;
+	}
+	.menu-principal ul{
+		text-align: center;
+	}
+	.menu-principal ul li{
+		width: 100%;
+	}
+	.menu-principal ul li a {
+		border-radius: 0px;
+		width: 100%;
+	}
+	.menu-principal {
+    	line-height: 30px;
+	}
+	.trailer,.sinopse{
+		margin-top: 0px;
+		display: block;
+		width: 100%;
+		float: none;
+    	height: auto;
+	}
+	.trailer{
+		width: 100%;
+	}
+	#inicio{
+		height: 180px;
+	}
+	.sinopse h1, .sinopse p {
+		margin-left: 5px;
+	}
+}
